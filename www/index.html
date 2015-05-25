@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/continentes.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Continentes - Grupo 3</title>
+    </head>
+    <body>
+
+        <div data-role="page" id="page1">
+          <div data-role="header" data-theme="f">
+            <h1>Continentes - Grupo 3</h1>
+          </div>
+
+              <div data-role="main" class="ui-content">              
+                <div data-role="controlgroup" data-type="vertical" data-theme="a">
+                  <a href="#page2" class="ui-btn" >EUROPA</a>
+                  <a href="#" class="ui-btn">ÁFRICA</a>
+                  <a href="#" class="ui-btn">ASIA</a>
+                  <a href="#" class="ui-btn">AMÉRICA</a>
+                  <a href="#" class="ui-btn">OCEANÍA</a>
+                </div>
+              </div>
+
+              <div data-role="footer" data-theme="f">
+                <h1>Entornos de Desarrollo - Grupo 3</h1>
+              </div>
+         </div> 
+
+        <div data-role="page" id="page2">
+          <div data-role="header" data-theme="f">
+            <h1>EUROPA</h1>
+          </div>
+
+              <div data-role="main" class="ui-content">              
+                <center><img src="img/europa.png" alt="europa" height="200">
+                <p>Europa es uno de los continentes que forman el supercontinente euroasiático, situado entre los paralelos 36º y 70º de latitud norte. De forma convencional y por motivos históricos es considerada un continente, tras la delimitación realizada por el geógrafo ruso Vassili Tatichtchev quien deseaba señalar la pertenencia de Rusia a Europa y a Asia.1 Las fronteras de Europa y la población son objeto de controversia, ya que el término continente puede referirse a un bien cultural y político o a distinciones fisiográficas. Andreas Kaplan describe Europa como "una máxima diversidad cultural en una superficie geográfica mínima".</p>
+                
+                <div id="check">
+                    <input name="checkbox" id="checkbox" type="checkbox" value="1" /> España
+                    <input name="checkbox" id="checkbox" type="checkbox" value="1" /> España
+                    <input name="checkbox" id="checkbox" type="checkbox" value="1" /> España
+               </div>
+               </center>
+                 
+              </div>
+              
+              <div data-role="footer" data-theme="f">
+                <h1>Entornos de Desarrollo - Grupo 3</h1>
+              </div>
+         </div> 
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
