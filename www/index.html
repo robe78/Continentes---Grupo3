@@ -4,7 +4,6 @@
     <head>
 
         <meta charset="utf-8" />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -18,6 +17,7 @@
     <body>
 
         <div data-role="page" id="page1">
+
           <div data-role="header" data-theme="f">
             <h1>Continentes - Grupo 3</h1>
           </div>
@@ -25,10 +25,10 @@
               <div data-role="main" class="ui-content">              
                 <div data-role="controlgroup" data-type="vertical" data-theme="a">
                   <a href="#page2" class="ui-btn" >EUROPA</a>
-                  <a href="#" class="ui-btn">ÁFRICA</a>
-                  <a href="#" class="ui-btn">ASIA</a>
-                  <a href="#" class="ui-btn">AMÉRICA</a>
-                  <a href="#" class="ui-btn">OCEANÍA</a>
+                  <a href="#page3" class="ui-btn">ÁFRICA</a>
+                  <a href="#page4" class="ui-btn">ASIA</a>
+                  <a href="#page5" class="ui-btn">AMÉRICA</a>
+                  <a href="#page6" class="ui-btn">OCEANÍA</a>
                 </div>
               </div>
 
@@ -37,46 +37,210 @@
               </div>
          </div> 
 
+
         <div data-role="page" id="page2">
+
           <div data-role="header" data-theme="f">
+            <a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-f" >Inicio</a>
             <h1>EUROPA</h1>
           </div>
 
-              <div data-role="main" class="ui-content">              
-                <center><img src="img/europa.png" alt="europa" height="200">
-                <div id="parrafo">
-                <p>Europa es uno de los continentes que forman el supercontinente euroasiático, situado entre los paralelos 36º y 70º de latitud norte. De forma convencional y por motivos históricos es considerada un continente, tras la delimitación realizada por el geógrafo ruso Vassili Tatichtchev quien deseaba señalar la pertenencia de Rusia a Europa y a Asia.1 Las fronteras de Europa y la población son objeto de controversia, ya que el término continente puede referirse a un bien cultural y político o a distinciones fisiográficas. Andreas Kaplan describe Europa como "una máxima diversidad cultural en una superficie geográfica mínima".</p>
-<<<<<<< HEAD
-                </div>
-                <div id="check">
-                    <input name="checkbox" id="checkbox" type="checkbox" value="1" /> España
-                    <input name="checkbox" id="checkbox" type="checkbox" value="1" /> España
-                    <input name="checkbox" id="checkbox" type="checkbox" value="1" /> España
-               </div>
-=======
-                
+          <div data-role="main" class="ui-content"> 
 
-                    <fieldset data-role="controlgroup">
-                        <input type="checkbox" name="checkbox-1a" id="checkbox-1a">
-                        <label for="checkbox-1a">España</label>
-                        <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
-                        <label for="checkbox-2a">Francia</label>
-                        <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
-                        <label for="checkbox-3a">Inglaterra</label>
-                        <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
-                        <label for="checkbox-4a">Noruega</label>
-                    </fieldset>
-
-
->>>>>>> origin/master
-               </center>
-                 
-              </div>
+            <center>
+              <img src="img/europa.png" alt="europa" height="200">
+              <div id="parrafo">
+              <p>Europa es uno de los continentes que forman el supercontinente euroasiático, situado entre los paralelos 36º y 70º de latitud norte. De forma convencional y por motivos históricos es considerada un continente, tras la delimitación realizada por el geógrafo ruso Vassili Tatichtchev quien deseaba señalar la pertenencia de Rusia a Europa y a Asia.1 Las fronteras de Europa y la población son objeto de controversia, ya que el término continente puede referirse a un bien cultural y político o a distinciones fisiográficas. Andreas Kaplan describe Europa como "una máxima diversidad cultural en una superficie geográfica mínima.</p>
               
-              <div data-role="footer" data-theme="f">
-                <h1>Entornos de Desarrollo - Grupo 3</h1>
+                  <fieldset data-role="controlgroup">
+                      <input type="checkbox" name="checkbox-1a" id="checkbox-1a">
+                      <label for="checkbox-1a">España</label>
+                      <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+                      <label for="checkbox-2a">Francia</label>
+                      <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+                      <label for="checkbox-3a">Inglaterra</label>
+
+                  </fieldset>
               </div>
-         </div> 
+            </center>
+            </div>
+
+            <div data-role="footer" data-theme='f' style="text-align:center;">
+
+            <a href="#page1" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-f">Volver</a>
+            <a href="#page_result" onclick="ola()" class="btn" data-theme="f" data-icon="search" data-role="button" data-transition="slidefade">Ver países</a>
+
+            </div>        
+        </div>
+
+
+        <div data-role="page" id="page3">
+
+          <div data-role="header" data-theme="f">
+            <a href="#page1"  class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-f" >Inicio</a>
+            <h1>ÁFRICA</h1>
+          </div>
+
+          <div data-role="main" class="ui-content"> 
+
+            <center>
+              <img src="img/africa.png" alt="africa" height="200">
+              <div id="parrafo">
+              <p>África es el tercer continente (después de Asia y América) más grande del mundo por extensión territorial. Limita al norte con el mar Mediterráneo, al oeste con el océano Atlántico, al sur con la conjunción de los océanos Atlántico e Índico y al este con el mar Rojo y el océano Índico. Posee una superficie total de 30 272 922 km² (621 600 en masa insular), que representa el 20,4 % del total terrestre. La población es de mil millones de habitantes, menos del 15 %. El continente se divide en 54 países, siendo todos ellos, miembros de la Unión Africana, con excepción de Marruecos.</p>
+              
+                  <fieldset data-role="controlgroup">
+                      <input type="checkbox" name="checkbox-1b" id="checkbox-1b">
+                      <label for="checkbox-1b">Marruecos</label>
+                      <input type="checkbox" name="checkbox-2b" id="checkbox-2b">
+                      <label for="checkbox-2b">Camerún</label>
+                      <input type="checkbox" name="checkbox-3b" id="checkbox-3b">
+                      <label for="checkbox-3b">Senegal</label>
+
+                  </fieldset>
+              </div>
+            </center>
+            </div>
+
+            <div data-role="footer" data-theme='f' style="text-align:center;">
+
+            <a href="#page1" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-f">Volver</a>
+            <a href="#page_result" class="btn" data-theme="f" data-icon="search" data-role="button" data-transition="slidefade">Ver países</a>
+
+            </div>       
+        </div>
+
+        <div data-role="page" id="page4">
+
+          <div data-role="header" data-theme="f">
+            <a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-f" >Inicio</a>
+            <h1>ASIA</h1>
+          </div>
+
+          <div data-role="main" class="ui-content"> 
+
+            <center>
+              <img src="img/asia.png" alt="asia" height="200">
+              <div id="parrafo">
+              <p>Asia o continente asiático es el continente más extenso y poblado de la Tierra que, con cerca de 44 millones de km², supone el 8,70% del total de la superficie terrestre y el 29,45 % de las tierras emergidas y, con 4 140 000 000 de habitantes, el 61 % de la población mundial. Se extiende sobre la mitad oriental del hemisferio Norte, desde el océano Glacial Ártico, al norte, hasta el océano Índico, al sur. Limita, al oeste, con los montes Urales, y al este, con el océano Pacífico.</p>
+              
+                  <fieldset data-role="controlgroup">
+                      <input type="checkbox" name="checkbox-1c" id="checkbox-1c">
+                      <label for="checkbox-1c">China</label>
+                      <input type="checkbox" name="checkbox-2c" id="checkbox-2c">
+                      <label for="checkbox-2c">Japón</label>
+                      <input type="checkbox" name="checkbox-3c" id="checkbox-3c">
+                      <label for="checkbox-3c">Tailandia</label>
+
+                  </fieldset>
+              </div>
+            </center>
+            </div>
+
+            <div data-role="footer" data-theme='f' style="text-align:center;">
+
+            <a href="#page1" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-f">Volver</a>
+            <a href="#page_result" class="btn" data-theme="f" data-icon="search" data-role="button" data-transition="slidefade">Ver países</a>
+
+            </div>
+
+          
+
+        </div>
+
+        <div data-role="page" id="page5">
+
+          <div data-role="header" data-theme="f">
+            <a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-f" >Inicio</a>
+            <h1>AMÉRICA</h1>
+          </div>
+
+          <div data-role="main" class="ui-content"> 
+
+            <center>
+              <img src="img/america.png" alt="america" height="200">
+              <div id="parrafo">
+              <p>América es el segundo continente más grande del planeta, después de Asia. Ocupa gran parte del hemisferio occidental de la Tierra. Se extiende desde el océano Glacial Ártico por el norte hasta el Cabo de Hornos por el sur, en la confluencia de los océanos Atlántico y Pacífico, los cuales a su vez delimitan al continente por el este y el oeste, respectivamente.</p>
+              
+                  <fieldset data-role="controlgroup">
+                      <input type="checkbox" name="checkbox-1d" id="checkbox-1d">
+                      <label for="checkbox-1d">USA</label>
+                      <input type="checkbox" name="checkbox-2d" id="checkbox-2d">
+                      <label for="checkbox-2d">Brasil</label>
+                      <input type="checkbox" name="checkbox-3d" id="checkbox-3d">
+                      <label for="checkbox-3d">Méjico</label>
+
+                  </fieldset>
+              </div>
+            </center>
+            </div>
+
+            <div data-role="footer" data-theme='f' style="text-align:center;">
+
+            <a href="#page1" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-f">Volver</a>
+            <a href="#page_result" class="btn" data-theme="f" data-icon="search" data-role="button" data-transition="slidefade">Ver países</a>
+
+            </div>       
+
+        </div>
+
+        <div data-role="page" id="page6">
+
+          <div data-role="header" data-theme="f">
+            <a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-f" >Inicio</a>
+            <h1>OCÉANÍA</h1>
+          </div>
+
+          <div data-role="main" class="ui-content"> 
+
+            <center>
+              <img src="img/oceania.png" alt="oceania" height="200">
+              <div id="parrafo">
+              <p>Oceanía es un continente insular de la Tierra constituido por la plataforma continental de Australia, las islas de Nueva Guinea, Nueva Zelanda y los archipiélagos coralinos y volcánicos de Melanesia, Micronesia y Polinesia. Un sector de los expertos considera que Insulindia también forma parte de Oceanía.1 Todas estas islas están distribuidas por el océano Pacífico. Con una extensión de 9 008 458 km², se trata del continente más pequeño del planeta.</p>
+              
+                  <fieldset data-role="controlgroup">
+                      <input type="checkbox" name="checkbox-1e" id="checkbox-1e">
+                      <label for="checkbox-1e">Australia</label>
+                      <input type="checkbox" name="checkbox-2e" id="checkbox-2e">
+                      <label for="checkbox-2e">Samoa</label>
+                      <input type="checkbox" name="checkbox-3e" id="checkbox-3e">
+                      <label for="checkbox-3e">Nueva Zelanda</label>
+
+                  </fieldset>
+              </div>
+            </center>
+            </div>
+
+            <div data-role="footer" data-theme='f' style="text-align:center;">
+
+            <a href="#page1" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-f">Volver</a>
+            <a href="#page_result" class="btn" data-theme="f" data-icon="search" data-role="button" data-transition="slidefade">Ver países</a>
+
+            </div>       
+
+        </div>
+
+
+        <div data-role="page" id="page_result">
+
+          <div data-role="header" data-theme="f">
+            <a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-f" >Inicio</a>
+            <h1>PAÍSES</h1>
+          </div>
+
+          <div data-role="main" class="ui-content">
+
+            <center>
+              
+              <div id="resultado">
+
+
+              </div>
+            </center>
+            </div>
+            <div data-role="footer" data-theme='f' style="text-align:center;">
+            <a href="#page1" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-f">Volver</a>
+            </div>
+        </div>
 
 
         <script type="text/javascript" src="cordova.js"></script>
