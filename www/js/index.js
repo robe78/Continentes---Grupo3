@@ -1,19 +1,5 @@
 $(document).ready(function(){  
 
-/*
-$(function(){
-marcar = function(elemento){
-elemento = $(elemento);
-elemento.prop("checked", true);
-}
-
-desmarcar = function(elemento){
-elemento = $(elemento);
-elemento.prop("checked", false).checkboxradio("refresh");
-}
-});
-*/
-
   $(".btn").click(function(){
         
     var dato1,dato2,dato3;
@@ -99,12 +85,7 @@ elemento.prop("checked", false).checkboxradio("refresh");
         $("#checkbox-3e").prop("checked", false).checkboxradio( "refresh" ); // para quitar la marca
     }
     
-
-
-
     document.getElementById("resultado").innerHTML=result;
     result="";
     });
 }); 
-
-
