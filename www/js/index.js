@@ -1,10 +1,6 @@
 $(document).ready(function(){  
 
-<<<<<<< HEAD
- function ver(){
-=======
   $(".btn").click(function(){
->>>>>>> origin/master
         
     var dato1,dato2,dato3;
         var result="";
@@ -88,18 +84,15 @@ $(document).ready(function(){
         result+=dato3;
         $("#checkbox-3e").prop("checked", false).checkboxradio( "refresh" ); // para quitar la marca
     }
-<<<<<<< HEAD
 
     document.getElementById("resultado").innerHTML=result;
     result="";
-   }
-}); 
 
-
-=======
-    
-    document.getElementById("resultado").innerHTML=result;
-    result="";
     });
 }); 
->>>>>>> origin/master
+
+function desmarcar(){
+$("input:checkbox").prop('checked', false);
+$("input:checkbox").checkboxradio();
+$("input:checkbox").checkboxradio("refresh");
+}
